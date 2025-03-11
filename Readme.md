@@ -13,3 +13,5 @@ To figure out why my version worked, I created a fresh venv and installed torch 
 https://pytorch.org/get-started/locally/: pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cpu
 Rather than using the index site myself. Pip grabbed a different file than the one on the index site, torchvision remained the
 same. The new file worked in the venv, so I incorporated that into the flatpak.
+
+To grab other dependencies automatically, that also include binaries, modify the pip generator to not discriminate against them and allow all wheels. Then take care of them manually.
