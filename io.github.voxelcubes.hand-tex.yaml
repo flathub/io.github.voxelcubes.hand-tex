@@ -37,7 +37,7 @@ modules:
         url: https://raw.githubusercontent.com/VoxelCubes/Hand-TeX/c6200021fb177bbf0160c4bfc1e993b626400079/media/handtex.png
         sha256: 02e41242d4d018b7a709cb36c0c576183d50956e5f2f05c12fe468cd2134c7a7
       - type: file
-        url: https://raw.githubusercontent.com/VoxelCubes/Hand-TeX/c76d2de220236008d610cad6dbd349573166be6c/flatpak/io.github.voxelcubes.hand-tex.appdata.xml
+        url: https://raw.githubusercontent.com/VoxelCubes/Hand-TeX/52ddb86ca3e92a721839b5346ec6d83ac089c0ad/flatpak/io.github.voxelcubes.hand-tex.appdata.xml
         sha256: daf2baed98c00ee990b2d165fb9cdac00093c09255e58d402d2a3efa88cd270f
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
