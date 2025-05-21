@@ -28,16 +28,16 @@ modules:
       - install -Dm644 ${FLATPAK_ID}.appdata.xml /app/share/metainfo/${FLATPAK_ID}.appdata.xml
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/c7/5e/7ad80c0df7f043279dba765c60f35b526de8edb44ace0a3a3e49feecbfae/handtex-1.0.3-py3-none-any.whl
-        sha256: 12a5893b79fc9cea65c4cb33d1b0e43899525e82d9c710dd9121df6b47b12926
+        url: https://files.pythonhosted.org/packages/0c/92/f4106b276e42f405c4fcbc0f305f07addaf997bbbc0d5e19f9779ccd0ba2/handtex-1.0.4-py3-none-any.whl
+        sha256: 62cd3cf2fd2211e649282bb6f29ff0bb10649a192cf646ae04bdea4d9b0f6563
       - type: file
-        url: https://raw.githubusercontent.com/VoxelCubes/Hand-TeX/c6200021fb177bbf0160c4bfc1e993b626400079/Hand-TeX.desktop
+        url: https://raw.githubusercontent.com/VoxelCubes/Hand-TeX/6e01a5e9d94a0557710946cd8957f360d97549e3/Hand-TeX.desktop
         sha256: 6760c50d853fa0f1afeecf916444e5296a687a2f74ec85176a5408624ecd5a19
       - type: file
-        url: https://raw.githubusercontent.com/VoxelCubes/Hand-TeX/c6200021fb177bbf0160c4bfc1e993b626400079/media/handtex.png
+        url: https://raw.githubusercontent.com/VoxelCubes/Hand-TeX/6e01a5e9d94a0557710946cd8957f360d97549e3/media/handtex.png
         sha256: 02e41242d4d018b7a709cb36c0c576183d50956e5f2f05c12fe468cd2134c7a7
       - type: file
-        url: https://raw.githubusercontent.com/VoxelCubes/Hand-TeX/52ddb86ca3e92a721839b5346ec6d83ac089c0ad/flatpak/io.github.voxelcubes.hand-tex.appdata.xml
-        sha256: daf2baed98c00ee990b2d165fb9cdac00093c09255e58d402d2a3efa88cd270f
+        url: https://raw.githubusercontent.com/VoxelCubes/Hand-TeX/6e01a5e9d94a0557710946cd8957f360d97549e3/flatpak/io.github.voxelcubes.hand-tex.appdata.xml
+        sha256: 8d9408e11793d6483a64e41e69c6ee1c9944fcff0a0e5a4cead0216996dc3749
 cleanup-commands:
   - /app/cleanup-BaseApp.sh
