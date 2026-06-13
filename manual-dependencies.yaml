@@ -9,13 +9,13 @@ modules:
         --prefix=${FLATPAK_DEST} "MarkupSafe==3.0.3" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/41/3c/a36c2450754618e62008bf7435ccb0f88053e07592e6028a34776213d877/markupsafe-3.0.3-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
-        sha256: 457a69a9577064c05a97c41f4e65148652db078a3a509039e64d3467b9e7ef97
+        url: https://files.pythonhosted.org/packages/a9/21/9b05698b46f218fc0e118e1f8168395c65c8a2c750ae2bab54fc4bd4e0e8/markupsafe-3.0.3-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl
+        sha256: ccfcd093f13f0f0b7fdd0f198b90053bf7b2f02a3927a30e63f3ccc9df56b676
         only-arches:
           - x86_64
       - type: file
-        url: https://files.pythonhosted.org/packages/da/ef/e648bfd021127bef5fa12e1720ffed0c6cbb8310c8d9bea7266337ff06de/markupsafe-3.0.3-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl
-        sha256: f34c41761022dd093b4b6896d4810782ffbabe30f2d443ff5f083e0cbbb8c737
+        url: https://files.pythonhosted.org/packages/00/07/575a68c754943058c78f30db02ee03a64b3c638586fba6a6dd56830b30a3/markupsafe-3.0.3-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl
+        sha256: 133a43e73a802c5562be9bbcd03d090aa5a1fe899db609c29e8c8d815c5f6de6
         only-arches:
           - aarch64
 
@@ -23,16 +23,16 @@ modules:
     buildsystem: simple
     build-commands:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "pillow==11.1.0" --no-build-isolation
+        --prefix=${FLATPAK_DEST} "pillow==12.2.0" --no-build-isolation
     sources:
       - type: file
-        url: https://files.pythonhosted.org/packages/38/0d/84200ed6a871ce386ddc82904bfadc0c6b28b0c0ec78176871a4679e40b3/pillow-11.1.0-cp312-cp312-manylinux_2_28_x86_64.whl
-        sha256: 9aa9aeddeed452b2f616ff5507459e7bab436916ccb10961c4a382cd3e03f47f
+        url: https://files.pythonhosted.org/packages/67/ee/21d4e8536afd1a328f01b359b4d3997b291ffd35a237c877b331c1c3b71c/pillow-12.2.0-cp313-cp313-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+        sha256: eedf4b74eda2b5a4b2b2fb4c006d6295df3bf29e459e198c90ea48e130dc75c3
         only-arches:
           - x86_64
       - type: file
-        url: https://files.pythonhosted.org/packages/08/d9/892e705f90051c7a2574d9f24579c9e100c828700d78a63239676f960b74/pillow-11.1.0-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
-        sha256: 9409c080586d1f683df3f184f20e36fb647f2e0bc3988094d4fd8c9f4eb1b3b3
+        url: https://files.pythonhosted.org/packages/4b/6e/3ccb54ce8ec4ddd1accd2d89004308b7b0b21c4ac3d20fa70af4760a4330/pillow-12.2.0-cp313-cp313-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl
+        sha256: 5cdfebd752ec52bf5bb4e35d9c64b40826bc5b40a13df7c3cda20a2c03a0f5ed
         only-arches:
           - aarch64
 
@@ -74,20 +74,20 @@ modules:
     buildsystem: simple
     build-commands:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "torch==2.6.0" --no-build-isolation
+        --prefix=${FLATPAK_DEST} "torch==2.12.0" --no-build-isolation
     sources:
       - type: file
-        url: https://download.pytorch.org/whl/cpu/torch-2.6.0%2Bcpu-cp312-cp312-linux_x86_64.whl
-        sha256: 59e78aa0c690f70734e42670036d6b541930b8eabbaa18d94e090abf14cc4d91
+        url: https://download-r2.pytorch.org/whl/cpu/torch-2.12.0%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl
+        sha256: ada78018bdfa30d1c766596cd32d910dbf5b03424cd859231b6d2a00533de922
         # Fix punycode.
-        dest-filename: torch-2.6.0+cpu-cp312-cp312-linux_x86_64.whl
+        dest-filename: torch-2.12.0+cpu-cp313-cp313-manylinux_2_28_x86_64.whl
         only-arches:
           - x86_64
       - type: file
-        url: https://download.pytorch.org/whl/cpu/torch-2.6.0%2Bcpu-cp312-cp312-manylinux_2_28_aarch64.whl
-        sha256: 318290e8924353c61b125cdc8768d15208704e279e7757c113b9620740deca98
+        url: https://download-r2.pytorch.org/whl/cpu/torch-2.12.0%2Bcpu-cp313-cp313-manylinux_2_28_aarch64.whl
+        sha256: 68b7ddd4db4603a03e106e74c7098c8d8c8943d33c1e5ada009ca4cd885759c3
         # Fix punycode.
-        dest-filename: torch-2.6.0+cpu-cp312-cp312-manylinux_2_28_aarch64.whl
+        dest-filename: torch-2.12.0+cpu-cp313-cp313-manylinux_2_28_aarch64.whl
         only-arches:
           - aarch64
 
@@ -95,20 +95,20 @@ modules:
     buildsystem: simple
     build-commands:
       - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}"
-        --prefix=${FLATPAK_DEST} "torchvision==0.21.0" --no-build-isolation
+        --prefix=${FLATPAK_DEST} "torchvision==0.27.0" --no-build-isolation
     sources:
       - type: file
-        url: https://download.pytorch.org/whl/cpu/torchvision-0.21.0%2Bcpu-cp312-cp312-linux_x86_64.whl
-        sha256: d6874431e678ba107b60a83f255c33f3755f06bad587b1b919aa514ec325dcd8
+        url: https://download-r2.pytorch.org/whl/cpu/torchvision-0.27.0%2Bcpu-cp313-cp313-manylinux_2_28_x86_64.whl
+        sha256: ba77816bbde883c0c2075a1e284cf2e6f324472d4523442f5e3ae0812a98ae1e
         # Fix punycode.
-        dest-filename: torchvision-0.21.0+cpu-cp312-cp312-linux_x86_64.whl
+        dest-filename: torchvision-0.27.0+cpu-cp313-cp313-manylinux_2_28_x86_64.whl
         only-arches:
           - x86_64
       - type: file
-        url: https://download.pytorch.org/whl/cpu/torchvision-0.21.0-cp312-cp312-linux_aarch64.whl
-        sha256: 5083a5b1fec2351bf5ea9900a741d54086db75baec4b1d21e39451e00977f1b1
+        url: https://download-r2.pytorch.org/whl/cpu/torchvision-0.27.0%2Bcpu-cp313-cp313-manylinux_2_28_aarch64.whl
+        sha256: 69093b64b2762c43df17be2db2be163029963d90bc3f1801500fdeb723e54833
         # Fix punycode.
-        dest-filename: torchvision-0.21.0-cp312-cp312-linux_aarch64.whl
+        dest-filename: torchvision-0.27.0+cpu-cp313-cp313-manylinux_2_28_aarch64.whl
         only-arches:
           - aarch64
 
